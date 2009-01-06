@@ -2,7 +2,11 @@ module Mocha
 
   class BacktraceFilter
   
-    LIB_DIRECTORY = File.expand_path(File.join(File.dirname(__FILE__), "..")) + File::SEPARATOR
+    LIB_DIRECTORY = unless SILVERLIGHT
+      File.expand_path(File.join(File.dirname(__FILE__), "..")) + File::SEPARATOR
+    else
+      "ruby/lib/mocha/lib/mocha/../"
+    end
 
     def initialize(lib_directory = LIB_DIRECTORY)
       @lib_directory = lib_directory

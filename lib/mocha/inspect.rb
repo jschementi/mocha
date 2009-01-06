@@ -1,4 +1,4 @@
-require 'date'
+#require 'date'
 
 module Mocha
   
@@ -62,6 +62,6 @@ class Time
   include Mocha::TimeMethods
 end
 
-class Date
-  include Mocha::DateMethods
-end
+#class Date
+#  include Mocha::DateMethods
+#end

@@ -1,5 +1,5 @@
 require 'mocha/parameter_matchers/base'
-require 'yaml'
+#require 'yaml'
 
 module Mocha
 
